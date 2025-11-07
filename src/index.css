@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: oklch(47.3% 0.137 46.201);
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: var(--primary-color);
+}
+
+.section-header {
+  font-family: "Playfair Display", serif;
+}
