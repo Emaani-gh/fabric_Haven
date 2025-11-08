@@ -61,7 +61,7 @@ const Featured = () => {
                   <span className="text-sm text-stone-600">per yard</span>
                 </div>
                 <div className="flex">
-                  <button className="text-white bg-amber-700 hover:bg-amber-900 rounded-lg px-4 flex-1 py-2">
+                  <button className="text-white bg-amber-700 hover:bg-amber-900 rounded-lg px-4 flex-1 py-2 transition duration-300">
                     Add To Cart
                   </button>
                 </div>
