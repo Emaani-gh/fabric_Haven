@@ -38,8 +38,8 @@ const Featured = () => {
         </div>
 
         <div className="cards grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {cards.map((card) => (
-            <div className="rounded-lg overflow-hidden shadow-sm">
+          {cards.map((card, i) => (
+            <div key={i} className="rounded-lg overflow-hidden shadow-sm">
               <div className="">
                 <img
                   className="w-full object-cover h-80"
