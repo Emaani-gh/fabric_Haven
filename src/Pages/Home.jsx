@@ -4,6 +4,7 @@ import Featured from "../components/Featured";
 import Collection from "../components/Collection";
 import About from "../components/About";
 import Testimonies from "../components/Testimonies";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Collection />
       <About />
       <Testimonies />
+      <Footer />
     </>
   );
 };
