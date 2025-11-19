@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
 @import "tailwindcss";
 
 :root {
@@ -10,9 +12,15 @@
   text-decoration-color: var(--primary-color);
 }
 
-.section-header,
-.font-playfair {
-  font-family: "Playfair Display", serif;
+/* ---------- CUSTOM FONTS USING TAILWIND LAYERS ---------- */
+@layer utilities {
+  .font-playfair {
+    font-family: "Playfair Display", serif;
+  }
+
+  .font-pacifico {
+    font-family: "Pacifico", serif;
+  }
 }
 
 .gradient-overlay {
