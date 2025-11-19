@@ -27,7 +27,10 @@ const Collection = () => {
   ];
 
   return (
-    <section className="py-20 bg-linear-to-b from-stone-50 to-white">
+    <section
+      id="collection"
+      className="py-20 bg-linear-to-b from-stone-50 to-white"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl section-header text-stone-800 mb-6 ">

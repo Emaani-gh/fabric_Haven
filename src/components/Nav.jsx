@@ -6,10 +6,11 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Shop", path: "/shop" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home", path: "#home" },
+    { name: "Fabrics", path: "#fabrics" },
+    { name: "Collection", path: "#collection" },
+    { name: "About", path: "#about" },
+    { name: "Contact", path: "#contact" },
   ];
 
   return (
@@ -22,31 +23,25 @@ const Nav = () => {
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <NavLink
-                to={link.path}
-                className={({ isActive }) =>
-                  `transition-colors duration-200 ${
-                    isActive
-                      ? "underline decoration-amber-800 underline-offset-4"
-                      : ""
-                  }`
-                }
+              <a
+                href={link.path}
+                className="transition-colors duration-200 hover:text-amber-800"
               >
                 {link.name}
-              </NavLink>
+              </a>
             </li>
           ))}
         </ul>
 
         {/* Right Icons */}
         <div className="hidden md:flex items-center space-x-6 text-gray-700">
-          <button className="hover:text-indigo-600 transition-colors duration-200">
+          <button className="hover:text-amber-600 cursor-pointer transition-colors duration-200">
             <Search size={22} />
           </button>
-          <button className="hover:text-indigo-600 transition-colors duration-200">
+          <button className="hover:text-amber-600 cursor-pointer transition-colors duration-200">
             <ShoppingCart size={22} />
           </button>
-          <button className="hover:text-indigo-600 transition-colors duration-200">
+          <button className="hover:text-amber-600 cursor-pointer transition-colors duration-200">
             <User size={22} />
           </button>
         </div>
@@ -66,13 +61,13 @@ const Nav = () => {
           <ul className="flex flex-col items-center space-y-4 py-4 text-gray-700 font-medium">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <NavLink
-                  to={link.path}
+                <a
+                  href={link.path}
                   className="transition-colors duration-200"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.name}
-                </NavLink>
+                </a>
               </li>
             ))}
 

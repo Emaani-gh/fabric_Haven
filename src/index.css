@@ -5,6 +5,9 @@
 :root {
   --primary-color: oklch(47.3% 0.137 46.201);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .active {
   text-decoration: underline;

@@ -3,6 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section
+      id="home"
       className="min-h-screen relative bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: "url('/images/hero.jpg')" }}
     >
